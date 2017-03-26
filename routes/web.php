@@ -33,6 +33,7 @@ Route::get('/', function() {
 		}
 		return $holder;
 	}
+	// array of arbitrarily nested arrays of integers
 	$arbitrarilyNestedArray = array(
 		array(
 			1, 
@@ -41,5 +42,7 @@ Route::get('/', function() {
 		),
 		4
 	);
+	$result = flattenArray($arbitrarilyNestedArray);
+	// test comment
 	return flattenArray($arbitrarilyNestedArray);
 });
