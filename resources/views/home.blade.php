@@ -19,7 +19,7 @@
                     </div>
                     <img src="/images/chef.png" alt="CHEF" class="chef-logo" />
                 </div>
-                <dv class="column2">
+                <dv class="column2" id="ajax-content">
                     <div class="registration-form">
                         <div class="title">
                             <p>So you think you can cook?</p>
@@ -30,24 +30,24 @@
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <label>Name<span class="required">*</span></label>
-                                <input type="text" name="name" value="{!! old('name') !!}" required>
+                                <input type="text" name="name" class="form-field" value="{!! old('name') !!}" required>
                             </div>
                             <div class="form-group">
                                 <label>Email<span class="required">*</span></label>
-                                <input type="email" name="email" value="{!! old('email') !!}" required>
+                                <input type="email" name="email" class="form-field" value="{!! old('email') !!}" required>
                                 <span class="error">{{ $errors->first('email') }}</span>
                             </div>
                             <div class="form-group">
                                 <label>Country<span class="required">*</span></label>
-                                <input type="text" name="country" value="{!! old('country') !!}" required>
+                                <input type="text" name="country" class="form-field" value="{!! old('country') !!}" required>
                             </div>
                             <div class="form-group">
                                 <label>Nationality<span class="required">*</span></label>
-                                <input type="text" name="nationality" value="{!! old('nationality') !!}" required>
+                                <input type="text" name="nationality" class="form-field" value="{!! old('nationality') !!}" required>
                             </div>
                             <div class="form-group">
                                 <label>Mobile<span class="required">*</span></label>
-                                <input type="text" name="mobile" value="{!! old('mobile') !!}" required>
+                                <input type="text" name="mobile" class="form-field" value="{!! old('mobile') !!}" required>
                             </div>
                             <button type="submit" class="submit">Submit</button>
                         </form>
@@ -56,9 +56,9 @@
             </div>
             <footer>
                 <nav>
-                    <ul>
+                    <ul id="navs">
                         <li>
-                            <a href="/">Register</a>
+                            <a href="/register">Register</a>
                         </li>
                         <li>
                             <a href="/upload">Upload</a>

@@ -19,10 +19,9 @@ Route::post('/register', [
 	'uses' => 'UsersController@store'
 ]);
 
-Route::get('/u', function(){
-	return view('upload');
+Route::get('/register', function(){
+	return view('register');
 });
-
 Route::get('upload', 'ImageController@upload' );
 Route::post('upload', 'ImageController@store' );
 Route::get('gallery', 'ImageController@show' );
