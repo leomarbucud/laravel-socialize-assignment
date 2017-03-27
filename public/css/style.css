@@ -19,10 +19,6 @@ body {
   position: relative;
 }
 
-.registration-bg {
-  background-image: url("/images/login-bg.jpg");
-}
-
 .row .column1 {
   width: 50%;
   float: left;
@@ -31,6 +27,32 @@ body {
 .row .column2 {
   width: 50%;
   float: left;
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .row .column1 {
+    width: 100%;
+  }
+  .row .column2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 810px) {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .row .column1 {
+    width: 50%;
+  }
+  .row .column2 {
+    width: 50%;
+  }
 }
 
 form .required, form .error {
@@ -67,10 +89,8 @@ form .submit {
   float: right;
 }
 
-.registration-logo img {
-  width: 200px;
-  height: auto;
-  margin: 10px;
+.registration-bg {
+  background-image: url("/images/login-bg.jpg");
 }
 
 .registration-form, .gallery-form, .upload-form {
@@ -82,8 +102,14 @@ form .submit {
   padding: 10px 30px;
 }
 
+.registration-form img, .gallery-form img, .upload-form img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
 .gallery img {
-  width: 150px;
+  width: 145px;
   height: auto;
   border: 2px solid #000;
 }
@@ -95,7 +121,27 @@ form .submit {
 
 .title p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.container-logo img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .chef-logo {
+    display: none;
+  }
+  .container-logo {
+    text-align: center;
+  }
+  .container-logo img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+  }
 }
 
 footer {
@@ -121,6 +167,17 @@ footer nav ul li {
 
 footer nav ul li a {
   text-decoration: none;
+}
+
+#loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #333 url("http://files.mimoymima.com/images/loading.gif") no-repeat center center;
 }
 
 /*# sourceMappingURL=style.css.map */

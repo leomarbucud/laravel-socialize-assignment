@@ -1,0 +1,20 @@
+.registration-bg {
+	background-image: $registration-bg;
+}
+.registration-form, .gallery-form, .upload-form {
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 5px;
+	min-height: 500px;
+	height: 100%;
+	-webkit-box-shadow: inset 0px 0px 52px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 52px -13px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 52px -13px rgba(0,0,0,0.75);
+	padding: 10px 30px;
+}
+.registration-form, .gallery-form, .upload-form {
+	img {
+		width: 200px;
+		height: auto;
+		margin: 10px;
+	}
+}

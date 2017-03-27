@@ -1,0 +1,28 @@
+.title {
+	text-align: center;
+	margin-bottom: 20px;
+	p {
+		font-weight: 500;
+		font-size: 20px;
+	}
+}
+.container-logo {
+	img {
+		width: 200px;
+		height: auto;
+		margin: 10px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.chef-logo {
+		display: none;
+	}
+	.container-logo {
+		text-align: center;
+		img {
+			width: 200px;
+			height: auto;
+			margin: 10px;
+		}
+	}
+}

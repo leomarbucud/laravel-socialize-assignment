@@ -6,7 +6,7 @@
     </div>
     <div class="gallery">
     @foreach( $images as $image )
-        <a href="{!! '/images/uploads/'.$image->path !!}"><img src="{!! '/images/uploads/'.$image->path !!}" /></a>
+        <a href="{!! '/images/uploads/'.$image->path !!}" target="_blank"><img src="{!! '/images/uploads/'.$image->path !!}" /></a>
     @endforeach
     </div>
 </div>

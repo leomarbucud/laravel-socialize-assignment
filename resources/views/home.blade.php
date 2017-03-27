@@ -14,7 +14,7 @@
         <div class="wrapper registration-bg">
             <div class="row">
                 <div class="column1">
-                    <div class="registration-logo">
+                    <div class="container-logo">
                        <img src="/images/glad-cooking-contest-logo.png" alt="GLAD COOKING CONTEST">
                     </div>
                     <img src="/images/chef.png" alt="CHEF" class="chef-logo" />
