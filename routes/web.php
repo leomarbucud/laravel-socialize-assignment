@@ -11,11 +11,23 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
-Route::get('/', function() {
+Route::post('/register', [
+	'uses' => 'UsersController@store'
+]);
+
+Route::get('/u', function(){
+	return view('upload');
+});
+
+Route::get('upload', 'ImageController@upload' );
+Route::post('upload', 'ImageController@store' );
+Route::get('gallery', 'ImageController@show' );
+
+Route::get('/2', function() {
 	
 	/**
      * Flatten an array of arbitrarily nested arrays of integers into a flat array of integers
